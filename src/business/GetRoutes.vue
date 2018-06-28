@@ -98,11 +98,11 @@
         var directionsService = new google.maps.DirectionsService();
         return new Promise(function (resolve, reject) {
           directionsService.route(options, function (result, status) {
-            if (status == 'OK') {
-              resolve(result);
-            }
-            else {
-              reject(status);
+                if (status == 'OK') {
+                  resolve(result);
+                }
+                else {
+                  reject(status);
             }
           });
         });
